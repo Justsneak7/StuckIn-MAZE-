@@ -66,74 +66,103 @@ evil2.shapeColor = "red";
 evil2.addAnimation("still",enemyIdle);
 evil2.addAnimation("attack",enemyAttack);
 evil2.scale = 0.19
+evil2.velocityY = 3.5;
 
 evil3 = createSprite(869,405,20,20);
 evil3.shapeColor = "red";
 evil3.addAnimation("still",enemyIdle);
 evil3.addAnimation("attack",enemyAttack);
 evil3.scale = 0.19
-
+evil3.velocityY = 3.5
+;
 evil4 = createSprite(270,370,20,20);
 evil4.shapeColor = "red";
 evil4.addAnimation("still",enemyIdle);
 evil4.addAnimation("attack",enemyAttack);
 evil4.scale = 0.19
+evil4.velocityX = -3.5;
 
 wall1 = createSprite(510,320,357,10);
+wall1.shapeColor = "purple";
 wall2 = createSprite(533,360,300,10);
+wall2.shapeColor = "purple";
 wall3 = createSprite(336,281,10,87);
+wall3.shapeColor = "purple";
 wall4 = createSprite(363,240,290,10);
+wall4.shapeColor = "purple";
 wall5 = createSprite(427,180,10,30);
+wall5.shapeColor = "purple";
 wall6 = createSprite(503,220,10,30);
+wall6.shapeColor = "purple";
 wall7 = createSprite(556,210,10,100);
+wall7.shapeColor = "purple";
 wall8 = createSprite(666,258,230,10);
+wall8.shapeColor = "purple";
 wall9 = createSprite(666,210,10,100);
+wall9.shapeColor = "purple";
 wall10 = createSprite(472,170,80,10);
+wall10.shapeColor = "purple";
 wall11 = createSprite(507,144,10,60);
+wall11.shapeColor = "purple";
 wall12 = createSprite(612,118,220,10);
+wall12.shapeColor = "purple";
 wall13 = createSprite(280,200,120,10);
+wall13.shapeColor = "purple";
 wall14 = createSprite(225,135,10,140);
+wall14.shapeColor = "purple";
 wall15 = createSprite(335,150,10,90);
+wall15.shapeColor = "purple";
 wall16 = createSprite(355,100,50,10);
+wall16.shapeColor = "purple";
 wall17 = createSprite(375,84,10,40);
+wall17.shapeColor = "purple";
 wall18 = createSprite(563,69,683,10);
-
+wall18.shapeColor = "purple";
 wall19 = createSprite(613,170,10,100);
-
+wall19.shapeColor = "purple";
 wall20 = createSprite(717,170,10,100);
-
+wall20.shapeColor = "purple";
 wall21 = createSprite(776,183,10,147);
-
+wall21.shapeColor = "purple";
 wall22 = createSprite(900,214,10,300);
-
+wall22.shapeColor = "purple";
 wall23 = createSprite(335,405,10,100);
-
+wall23.shapeColor = "purple";
 wall24 = createSprite(360,450,47,10);
+wall24.shapeColor = "purple";
 wall25 = createSprite(379,405,10,100);
+wall25.shapeColor = "purple";
 wall26 = createSprite(223,400,10,330);
+wall26.shapeColor = "purple";
 wall27 = createSprite(590,560,730,10);
+wall27.shapeColor = "purple";
 wall28 = createSprite(950,460,10,200);
+wall28.shapeColor = "purple";
 wall29 = createSprite(925,360,60,10);
+wall29.shapeColor = "purple";
 wall30 = createSprite(925,410,60,10);
-
+wall30.shapeColor = "purple";
 wall31 = createSprite(410,410,57,10);
+wall31.shapeColor = "purple";
 wall32 = createSprite(434,458,10,105);
-
+wall32.shapeColor = "purple";
 wall33 = createSprite(578,506,297,10);
-
+wall33.shapeColor = "purple";
 wall34 = createSprite(730,382,10,258);
-
+wall34.shapeColor = "purple";
 wall35 = createSprite(845,313,10,200);
-//above
+wall35.shapeColor = "purple";
 wall36 = createSprite(800,410,100,10);
-
-wall36 = createSprite(594,460,10,100);
-
+wall36.shapeColor = "purple";
+wall37 = createSprite(594,460,10,100);
+wall37.shapeColor = "purple";
 wall38 = createSprite(530,410,10,100);
+wall38.shapeColor = "purple";
 wall39 = createSprite(678,410,10,100);
+wall39.shapeColor = "purple";
 wall40 = createSprite(837,217,120,10);
-wall17.shapeColor = "red";
-wall22.shapeColor = "red";
+wall40.shapeColor = "purple";
+
 
 
 bulletLGroup = new Group();
@@ -216,10 +245,112 @@ function draw(){
   }
 
   //bullet bounces(off)
+  if(bulletLGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
+  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
+  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
+  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
+  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
+  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
+  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
+  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
+  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
+  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+    bulletLGroup.destroyEach();
+  }
+  if(bulletRGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
+  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
+  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
+  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
+  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
+  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
+  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
+  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
+  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
+  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+    bulletRGroup.destroyEach();
+  }
+
+  if(bulletDGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
+  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
+  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
+  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
+  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
+  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
+  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
+  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
+  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
+  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+    bulletDGroup.destroyEach();
+  }
+
+  if(bulletUGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
+  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
+  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
+  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
+  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
+  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
+  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
+  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
+  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
+  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+    bulletWGroup.destroyEach();
+  }
 
   //evil bounces(off)
   evil1.bounceOff(wall17);
   evil1.bounceOff(wall22);
+
+  evil2.bounceOff(wall12);
+  evil2.bounceOff(wall1);
+
+  evil3.bounceOff(wall40);
+  evil3.bounceOff(wall27);
+
+  evil4.bounceOff(wall23);
+  evil4.bounceOff(wall26);
+
+  // hero bouceoff
+  hero.bounceOff(wall1);
+  hero.bounceOff(wall2);
+  hero.bounceOff(wall3);
+  hero.bounceOff(wall4);
+  hero.bounceOff(wall5);
+  hero.bounceOff(wall6);
+  hero.bounceOff(wall7);
+  hero.bounceOff(wall8);
+  hero.bounceOff(wall9);
+  hero.bounceOff(wall10);
+  hero.bounceOff(wall11);
+  hero.bounceOff(wall12);
+  hero.bounceOff(wall13);
+  hero.bounceOff(wall14);
+  hero.bounceOff(wall15);
+  hero.bounceOff(wall16);
+  hero.bounceOff(wall17);
+  hero.bounceOff(wall18);
+  hero.bounceOff(wall19);
+  hero.bounceOff(wall20);
+  hero.bounceOff(wall21);
+  hero.bounceOff(wall22);
+  hero.bounceOff(wall23);
+  hero.bounceOff(wall24);
+  hero.bounceOff(wall25);
+  hero.bounceOff(wall26);
+  hero.bounceOff(wall27);
+  hero.bounceOff(wall28);
+  hero.bounceOff(wall29);
+  hero.bounceOff(wall30);
+  hero.bounceOff(wall31);
+  hero.bounceOff(wall32);
+  hero.bounceOff(wall33);
+  hero.bounceOff(wall34);
+  hero.bounceOff(wall35);
+  hero.bounceOff(wall36);
+  hero.bounceOff(wall37);
+  hero.bounceOff(wall38);
+  hero.bounceOff(wall39);
+  hero.bounceOff(wall40);
+
 
   
 
@@ -230,6 +361,8 @@ function draw(){
       friend1.x = hero.x - 10;
       friend1.y = hero.y;
   }
+
+
 
   
 
