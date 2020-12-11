@@ -36,6 +36,8 @@ function preload(){
 
   pcImage = loadImage("images/ninjaright1.png");
 
+  //bulletImg = loadImage("images/neonstick.png");
+
   
   
 }
@@ -257,43 +259,43 @@ function draw(){
   ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
     bulletLGroup.destroyEach();
   }
-  if(bulletRGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
-  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
-  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
-  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
-  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
-  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
-  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
-  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
-  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
-  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+  if(bulletRGroup.isTouching(wall1)||bulletRGroup.isTouching(wall2)||bulletRGroup.isTouching(wall3)||bulletRGroup.isTouching(wall4)
+  ||bulletRGroup.isTouching(wall4)||bulletRGroup.isTouching(wall6)||bulletRGroup.isTouching(wall7)||bulletRGroup.isTouching(wall8)
+  ||bulletRGroup.isTouching(wall9)||bulletRGroup.isTouching(wall10)||bulletRGroup.isTouching(wall11)||bulletRGroup.isTouching(wall12)
+  ||bulletRGroup.isTouching(wall13)||bulletRGroup.isTouching(wall14)||bulletRGroup.isTouching(wall15)||bulletRGroup.isTouching(wall16)
+  ||bulletRGroup.isTouching(wall17)||bulletRGroup.isTouching(wall18)||bulletRGroup.isTouching(wall19)||bulletRGroup.isTouching(wall20)
+  ||bulletRGroup.isTouching(wall21)||bulletRGroup.isTouching(wall22)||bulletRGroup.isTouching(wall23)||bulletRGroup.isTouching(wall24)
+  ||bulletRGroup.isTouching(wall25)||bulletRGroup.isTouching(wall26)||bulletRGroup.isTouching(wall27)||bulletRGroup.isTouching(wall28)
+  ||bulletRGroup.isTouching(wall29)||bulletRGroup.isTouching(wall30)||bulletRGroup.isTouching(wall31)||bulletRGroup.isTouching(wall32)
+  ||bulletRGroup.isTouching(wall33)||bulletRGroup.isTouching(wall34)||bulletRGroup.isTouching(wall35)||bulletRGroup.isTouching(wall36)
+  ||bulletRGroup.isTouching(wall37)||bulletRGroup.isTouching(wall38)||bulletRGroup.isTouching(wall39)||bulletRGroup.isTouching(wall40)){
     bulletRGroup.destroyEach();
   }
 
-  if(bulletDGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
-  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
-  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
-  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
-  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
-  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
-  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
-  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
-  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
-  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
+  if(bulletDGroup.isTouching(wall1)||bulletDGroup.isTouching(wall2)||bulletDGroup.isTouching(wall3)||bulletDGroup.isTouching(wall4)
+  ||bulletDGroup.isTouching(wall4)||bulletDGroup.isTouching(wall6)||bulletDGroup.isTouching(wall7)||bulletDGroup.isTouching(wall8)
+  ||bulletDGroup.isTouching(wall9)||bulletDGroup.isTouching(wall10)||bulletDGroup.isTouching(wall11)||bulletDGroup.isTouching(wall12)
+  ||bulletDGroup.isTouching(wall13)||bulletDGroup.isTouching(wall14)||bulletDGroup.isTouching(wall15)||bulletDGroup.isTouching(wall16)
+  ||bulletDGroup.isTouching(wall17)||bulletDGroup.isTouching(wall18)||bulletDGroup.isTouching(wall19)||bulletDGroup.isTouching(wall20)
+  ||bulletDGroup.isTouching(wall21)||bulletDGroup.isTouching(wall22)||bulletDGroup.isTouching(wall23)||bulletDGroup.isTouching(wall24)
+  ||bulletDGroup.isTouching(wall25)||bulletDGroup.isTouching(wall26)||bulletDGroup.isTouching(wall27)||bulletDGroup.isTouching(wall28)
+  ||bulletDGroup.isTouching(wall29)||bulletDGroup.isTouching(wall30)||bulletDGroup.isTouching(wall31)||bulletDGroup.isTouching(wall32)
+  ||bulletDGroup.isTouching(wall33)||bulletDGroup.isTouching(wall34)||bulletDGroup.isTouching(wall35)||bulletDGroup.isTouching(wall36)
+  ||bulletDGroup.isTouching(wall37)||bulletDGroup.isTouching(wall38)||bulletDGroup.isTouching(wall39)||bulletDGroup.isTouching(wall40)){
     bulletDGroup.destroyEach();
   }
 
-  if(bulletUGroup.isTouching(wall1)||bulletLGroup.isTouching(wall2)||bulletLGroup.isTouching(wall3)||bulletLGroup.isTouching(wall4)
-  ||bulletLGroup.isTouching(wall4)||bulletLGroup.isTouching(wall6)||bulletLGroup.isTouching(wall7)||bulletLGroup.isTouching(wall8)
-  ||bulletLGroup.isTouching(wall9)||bulletLGroup.isTouching(wall10)||bulletLGroup.isTouching(wall11)||bulletLGroup.isTouching(wall12)
-  ||bulletLGroup.isTouching(wall13)||bulletLGroup.isTouching(wall14)||bulletLGroup.isTouching(wall15)||bulletLGroup.isTouching(wall16)
-  ||bulletLGroup.isTouching(wall17)||bulletLGroup.isTouching(wall18)||bulletLGroup.isTouching(wall19)||bulletLGroup.isTouching(wall20)
-  ||bulletLGroup.isTouching(wall21)||bulletLGroup.isTouching(wall22)||bulletLGroup.isTouching(wall23)||bulletLGroup.isTouching(wall24)
-  ||bulletLGroup.isTouching(wall25)||bulletLGroup.isTouching(wall26)||bulletLGroup.isTouching(wall27)||bulletLGroup.isTouching(wall28)
-  ||bulletLGroup.isTouching(wall29)||bulletLGroup.isTouching(wall30)||bulletLGroup.isTouching(wall31)||bulletLGroup.isTouching(wall32)
-  ||bulletLGroup.isTouching(wall33)||bulletLGroup.isTouching(wall34)||bulletLGroup.isTouching(wall35)||bulletLGroup.isTouching(wall36)
-  ||bulletLGroup.isTouching(wall37)||bulletLGroup.isTouching(wall38)||bulletLGroup.isTouching(wall39)||bulletLGroup.isTouching(wall40)){
-    bulletWGroup.destroyEach();
+  if(bulletUGroup.isTouching(wall1)||bulletUGroup.isTouching(wall2)||bulletUGroup.isTouching(wall3)||bulletUGroup.isTouching(wall4)
+  ||bulletUGroup.isTouching(wall4)||bulletUGroup.isTouching(wall6)||bulletUGroup.isTouching(wall7)||bulletUGroup.isTouching(wall8)
+  ||bulletUGroup.isTouching(wall9)||bulletUGroup.isTouching(wall10)||bulletUGroup.isTouching(wall11)||bulletUGroup.isTouching(wall12)
+  ||bulletUGroup.isTouching(wall13)||bulletUGroup.isTouching(wall14)||bulletUGroup.isTouching(wall15)||bulletUGroup.isTouching(wall16)
+  ||bulletUGroup.isTouching(wall17)||bulletUGroup.isTouching(wall18)||bulletUGroup.isTouching(wall19)||bulletUGroup.isTouching(wall20)
+  ||bulletUGroup.isTouching(wall21)||bulletUGroup.isTouching(wall22)||bulletUGroup.isTouching(wall23)||bulletUGroup.isTouching(wall24)
+  ||bulletUGroup.isTouching(wall25)||bulletUGroup.isTouching(wall26)||bulletUGroup.isTouching(wall27)||bulletUGroup.isTouching(wall28)
+  ||bulletUGroup.isTouching(wall29)||bulletUGroup.isTouching(wall30)||bulletUGroup.isTouching(wall31)||bulletUGroup.isTouching(wall32)
+  ||bulletUGroup.isTouching(wall33)||bulletUGroup.isTouching(wall34)||bulletUGroup.isTouching(wall35)||bulletUGroup.isTouching(wall36)
+  ||bulletUGroup.isTouching(wall37)||bulletUGroup.isTouching(wall38)||bulletUGroup.isTouching(wall39)||bulletUGroup.isTouching(wall40)){
+    bulletUGroup.destroyEach();
   }
 
   //evil bounces(off)
@@ -403,7 +405,7 @@ function draw(){
 
 function createBulletL(){
   bulletsL = createSprite(hero.x,hero.y,5,5);
-  
+  //bulletLGroup.addImage("bullet",bulletImg)
   bulletsL.velocityX = -5;
 
   bulletLGroup.add(bulletsL);
@@ -411,7 +413,7 @@ function createBulletL(){
 
 function createBulletR(){
   bulletsR = createSprite(hero.x,hero.y,5,5);
-  
+  //bulletRGroup.addImage("bullet",bulletImg)
   bulletsR.velocityX = 5;
 
   bulletRGroup.add(bulletsR);
@@ -419,7 +421,7 @@ function createBulletR(){
 
 function createBulletU(){
   bulletsU= createSprite(hero.x,hero.y,5,5);
-  
+  //bulletUGroup.addImage("bullet",bulletImg)
   bulletsU.velocityY = -5;
 
   bulletUGroup.add(bulletsU);
@@ -427,7 +429,7 @@ function createBulletU(){
 
 function createBulletD(){
   bulletsD = createSprite(hero.x,hero.y,5,5);
-  
+  //bulletDGroup.addImage("bullet",bulletImg)
   bulletsD.velocityY = 5;
   bulletDGroup.add(bulletsD)
 }
