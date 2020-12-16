@@ -36,10 +36,14 @@ function preload(){
 
   pcImage = loadImage("images/ninjaright1.png");
 
-  //bulletImg = loadImage("images/neonstick.png");
+  bulletImg = loadImage("images/bullet.png");
 
+  bulletUImg = loadImage("images/bulletup.png");
   
-  
+  bulletDImg = loadImage("images/bulletdown.png");
+
+  bulletLImg = loadImage("images/bulletleft.png");
+
 }
 
 function setup(){
@@ -405,7 +409,7 @@ function draw(){
 
 function createBulletL(){
   bulletsL = createSprite(hero.x,hero.y,5,5);
-  //bulletLGroup.addImage("bullet",bulletImg)
+  bulletsL.addImage("bullet",bulletLImg)
   bulletsL.velocityX = -5;
 
   bulletLGroup.add(bulletsL);
@@ -413,7 +417,7 @@ function createBulletL(){
 
 function createBulletR(){
   bulletsR = createSprite(hero.x,hero.y,5,5);
-  //bulletRGroup.addImage("bullet",bulletImg)
+  bulletsR.addImage("bullet",bulletImg);
   bulletsR.velocityX = 5;
 
   bulletRGroup.add(bulletsR);
@@ -421,7 +425,8 @@ function createBulletR(){
 
 function createBulletU(){
   bulletsU= createSprite(hero.x,hero.y,5,5);
-  //bulletUGroup.addImage("bullet",bulletImg)
+  bulletsU.addImage("bullet",bulletUImg);
+  bulletsU.scale = 0.02
   bulletsU.velocityY = -5;
 
   bulletUGroup.add(bulletsU);
@@ -429,7 +434,7 @@ function createBulletU(){
 
 function createBulletD(){
   bulletsD = createSprite(hero.x,hero.y,5,5);
-  //bulletDGroup.addImage("bullet",bulletImg)
+  bulletsD.addImage("bullet",bulletDImg)
   bulletsD.velocityY = 5;
   bulletDGroup.add(bulletsD)
 }
